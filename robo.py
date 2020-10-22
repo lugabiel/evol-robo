@@ -7,9 +7,11 @@ class robo(object):
           na região que o robo ocupou recentemente.
     mov - representa o par de comandos discretos capaz
           acionar os motores do robo.
+
     '''
     def __init__(self):
-        self.luz = 0.0
+
+        self.__luz = 0.0      #TODO: D2 = m.Pin(4,m.Pin.IN) -- machine.adc()
         self.mov = [0,0]
 
     def anda(self):
@@ -23,8 +25,3 @@ class robo(object):
     def olha(self):
         self.luz = random.uniform(0,1)
         print ('a luz aqui eh -- ',self.luz)
-        
-    
-        
-        
-            
