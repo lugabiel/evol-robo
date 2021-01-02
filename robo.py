@@ -1,6 +1,8 @@
 import random
 
 class robo(object):
+    mov = [0,0]
+    luz = 0.0
     '''
     esta eh a classe robo - entidade composta por:
     luz - corresponde a intensidade luminosa momentanea
